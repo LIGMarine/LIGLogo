@@ -20,7 +20,7 @@
           <th>Filename</th>
           <th>Type</th>
           <th>Size <small>(bytes)</small></th>
-          <th>Image Size</th>
+          <th>Image Size (W x H)</th>
           <th>Date Modified</th>
         </tr>
       </thead>
@@ -75,7 +75,7 @@
           
           // Gets file size 
           $size=number_format(filesize($dirArray[$index]));
-          $imagesize = getimagesize($dirArray[$index])[0];
+          $imagesize = getimagesize($dirArray[$index]);
           // Gets Date Modified Data
           $modtime=date("M j Y g:i A", filemtime($dirArray[$index]));
           $timekey=date("YmdHis", filemtime($dirArray[$index]));
@@ -121,7 +121,7 @@
             <td><a href='./$namehref'>$name</a></td>
             <td><a href='./$namehref'>$extn</a></td>
             <td><a href='./$namehref'>$size</a></td>
-            <td><a href='./$namehref'>$imagesize</a></td>
+            <td><a href='./$namehref'>$imagesize[0]x$imagesize[1]</a></td>
             <td sorttable_customkey='$timekey'><a href='./$namehref'>$modtime</a></td>
           </tr>");
           }
