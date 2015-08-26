@@ -63,7 +63,7 @@
           {$hide=".";
           $ahref="./?hidden";
           $atext="Show";}
-          if((substr("$dirArray[$index]", 0, 1) != $hide) && ($dirArray[$index] != "web.config"))	 {
+          if((substr("$dirArray[$index]", 0, 1) != $hide) && ($dirArray[$index] != "web.config") && ($dirArray[$index] != "favicon.ico"))	 {
           
           // Gets File Names
           $name=$dirArray[$index];
