@@ -75,7 +75,7 @@
           
           // Gets file size 
           $size=number_format(filesize($dirArray[$index]));
-          $imagesize = getimagesize($dirArray[$index]);
+          $imagesize = getimagesize($dirArray[$index])[0];
           // Gets Date Modified Data
           $modtime=date("M j Y g:i A", filemtime($dirArray[$index]));
           $timekey=date("YmdHis", filemtime($dirArray[$index]));
