@@ -87,7 +87,12 @@ tr:hover td a {
 }
 
 
-
+.showme{ 
+display: none;
+}
+.showhim:hover .showme{
+display : block;
+}
 
 
 /* icons for file types (icons by famfamfam) */

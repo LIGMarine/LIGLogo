@@ -118,7 +118,7 @@
           // Print 'em
           print("
           <tr class='$class'>
-            <td><a href='./$namehref'>$name</a></td>
+            <td><div class="showhim"><a href='./$namehref'>$name</a><div class="showme"><img src='$namehref' style='max-width: 100px; max-height: 100px;'></div></div></td>
             <td><a href='./$namehref'>$extn</a></td>
             <td><a href='./$namehref'>$size</a></td>
             <td><a href='./$namehref'>$imagesize[0]x$imagesize[1]</a></td>
